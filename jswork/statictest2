@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+        <title>Lab5 - My Docs</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">My Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../lab4">Lab4</a>
+                </li>
+            
+            
+            
+                <li class="active">
+                    <a href=".">Lab5</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="../lab6to8">Lab6to8</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li >
+                    <a rel="next" href="../lab4">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../lab6to8">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#lab-5-timesheet">Lab 5 Timesheet</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h3 id="lab-5-timesheet">Lab 5 Timesheet</h3>
+<pre class="prettyprint well"><code>#!/bin/bash
+# ts_input
+# sassenbergm
+echo $TD
+echo -n $TD &quot; &quot;&gt;&gt;$HOME/public_html/timesheet.log
+
+dialog --inputbox &quot;Enter your name:&quot; 8 40 2&gt;&gt;$HOME/public_html/timesheet.log
+echo -n &quot;| &quot;&gt;&gt;$HOME/public_html/timesheet.log
+clear
+
+echo &quot;Enter project name and description:&quot;
+read INPVAR
+echo $INPVAR &gt;&gt;$HOME/public_html/timesheet.log
+#Add to log file
+
+#Add to HTML file
+$HOME/public_html/ts_mkweb
+
+echo &quot;Done.&quot;
+
+--------------------------
+
+#!/bin/bash
+# ts_mkweb
+# sassenbergm
+echo $HDR &gt; $HOME/public_html/timesheet.html
+cat $HOME/public_html/timesheet.log &gt;&gt; $HOME/public_html/timesheet.html
+echo $FTR &gt;&gt; $HOME/public_html/timesheet.html
+#eof
+
+-------------------------
+#!/HOME/.bashrc
+# bashrc
+# sassenbergm
+
+test -s ~/.funcs &amp;&amp; . ~/.funcs || true
+
+export HDR=&quot;&lt;html&gt;&lt;head&gt;&lt;title&gt;Timesheet&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;pre&gt;&quot;
+export FTR=&quot;&lt;/pre&gt;&lt;/body&gt;&lt;/html&gt;&quot;
+</code></pre>
+
+</div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/prettify-1.0.min.js"></script>
+        <script src="../js/base.js"></script>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+
+        <title>Lab4 - My Docs</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">My Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../fortune">Fortune</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href=".">Lab4</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../lab5">Lab5</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../lab8">Lab8</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                
+                <li >
+                    <a rel="next" href="../fortune">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../lab5">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                
+            </ul>
+            
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#binbash">!/bin/bash</a></li>
+        
+    
+        <li class="main "><a href="#script1">script1</a></li>
+        
+    
+        <li class="main "><a href="#lab-4-script1">lab 4 script1</a></li>
+        
+    
+        <li class="main "><a href="#hays">hays</a></li>
+        
+    
+        <li class="main "><a href="#today">today</a></li>
+        
+    
+        <li class="main "><a href="#date-of-birth">Date of Birth</a></li>
+        
+    
+        <li class="main "><a href="#seconds-alive">seconds alive</a></li>
+        
+    
+        <li class="main "><a href="#days-alive">days alive</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="binbash">!/bin/bash</h1>
+<h1 id="script1">script1</h1>
+<h1 id="lab-4-script1">lab 4 script1</h1>
+<h1 id="hays">hays</h1>
+<h1 id="today">today</h1>
+<p>SDATE=$(date +%s)</p>
+<h1 id="date-of-birth">Date of Birth</h1>
+<p>EDATE=$(date -d '07/01/1995' +%s)</p>
+<h1 id="seconds-alive">seconds alive</h1>
+<p>SALIVE=$(($SDATE - $EDATE))</p>
+<h1 id="days-alive">days alive</h1>
+<p>DALIVE=$(($SALIVE / 86400))
+TENDAYS=$(($SALIVE + 864000000))
+TDATE=$(date -d '@'$TENDAYS'' +%m/%d/%Y)</p>
+<p>echo "You have been alive "$SALIVE" seconds."
+echo "You have been alive "$DALIVE" days."
+echo "Ten Thousand Days for you is: "$TDATE"."</p>
+<p>echo -n "Please enter your first name: "
+read fname
+echo -n "Please enter your first number: "
+read numb1
+echo -n "Please enter your second number: "
+read numb2
+SUM1=$((numb1+numb2))</p>
+<p>echo "Hi $fname, the sum of your numbers is: $SUM1."
+echo $(date +%s) $fname $SUM1 &gt;&gt; script1.log</p>
+</div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/prettify-1.0.min.js"></script>
+        <script src="../js/base.js"></script>
+    </body>
+</html>

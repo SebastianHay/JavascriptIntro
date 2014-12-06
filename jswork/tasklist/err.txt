@@ -1,0 +1,11 @@
+
+Error (400)
+It seems the app you were using submitted a bad request. If you would like to report this error to the app's developer, include the information below.
+
+
+More details for developers
+
+Invalid redirect_uri: u'http://jeremy.yosemite.edu/~dkp/tasklist/'. It must exactly match one of the redirect URIs you've pre-configured for your app (including the path)
+
+
+

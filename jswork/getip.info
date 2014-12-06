@@ -1,0 +1,11 @@
+#!/bin/bash
+# hays
+# getip.info
+
+ipaddr=$(cat ~/inclass/ipvisitors.sqlite)
+
+for x in $ipaddr
+do
+ location=$(curl -s http://freegeoip.net/csv/$x)
+ echo $location
+done

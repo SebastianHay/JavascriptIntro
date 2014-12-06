@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <title>My Docs</title>
+
+        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/prettify-1.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">My Docs</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="lab4/">Lab4</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="lab5/">Lab5</a>
+                </li>
+            
+            
+            
+                <li >
+                    <a href="lab6to8/">Lab6to8</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="lab4/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#matthew-sassenbergs-cmpsc-210-work">Matthew Sassenberg's CMPSC 210 Work</a></li>
+        
+            <li><a href="#list-of-the-code-submitted-this-semester">List of the code submitted this semester</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="matthew-sassenbergs-cmpsc-210-work">Matthew Sassenberg's CMPSC 210 Work</h1>
+<h2 id="list-of-the-code-submitted-this-semester">List of the code submitted this semester</h2>
+<ul>
+<li><code>Lab4</code> - This lab is a simple script that will prompt the user for name and 2 numbers. Then, the script will add the two numbers together and display the sum. </li>
+<li><code>Lab5</code> - This lab we created a timesheet program  to document what you're working on. The program will prompt the user for "Project name and description" and add the information to a timesheet log file. Also, a website was created that will update after a new timesheet log has been created.  </li>
+<li><code>Lab6to8</code> - In these labs we created a webpage displaying a Google Map with markers displaying the location of everyone who has accessed the Jeremy Box. Starting with Lab 6, we sorted the access log for the Jeremy Box to just IP addresses. Then in Lab 7, building onto the previous code a for loop was added to parse freegeoip.net and pull the lat/long coordinates for each IP address. Also, a sqlite database was created with the Ip addresses and lat/long information. Finally in Lab 8, all the code was consolidated into local functions.</li>
+</ul>
+</div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/prettify-1.0.min.js"></script>
+        <script src="./js/base.js"></script>
+    </body>
+</html>

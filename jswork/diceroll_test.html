@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+div.dice{
+        float:center;
+        width:64px;
+        background:#556B2F;
+        border:#999 2px solid;
+        padding:20px;
+        font-size:48px;
+        text-align:center;
+        margin:10px;
+}
+</style>
+<script>
+function rollDice(){
+        var die = document.getElementById("die");
+        var status = document.getElementById("status");
+        var d1 = Math.floor(Math.random() * 20) + 1;
+        var diceTtl = d1;
+        die.innerHTML = d1;
+	status.innerHTML = "Congratulations! You rolled a "+diceTtl+".";
+}
+</script>
+</head>
+<body>
+<div id="die" class="dice">0</div>
+<button onclick="rollDice()">Click Me!</button>
+<h2 id="status" style="clear:left;"></h2>
+</body>
+</html>
+

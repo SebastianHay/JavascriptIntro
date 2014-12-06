@@ -1,0 +1,33 @@
+<pre>
+<code>
+value = myObject[name];
+if (value === undefined) {                 //using === undefined
+	alert(name + ' not found. ');      //is proper whereas
+}                                          //== null is flawed
+
+//always use curly braces {}
+//don't bother using ++ or --
+
+var newObject =                            //creates new object
+	Object.create(oldObject);          //which inherits from the old one
+
+if (typeofObject.create !== 'function') {  //try using this
+	Object.create = function(o) {      //learn by doing
+		function F() {}
+		F.prototype = o;
+		return new F();
+	};
+}
+
+var digit_name = function () {
+	var names = ['zero', 'one', 'two',
+		'three', 'four', 'five', 'six',
+		'seven', 'eight', 'nine'];
+
+	return function (n) {
+		return names[n];
+	};
+}();
+alert(digit_name(3));                      // 'three
+</code>
+</pre>
